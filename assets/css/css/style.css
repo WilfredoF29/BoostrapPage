@@ -4,6 +4,39 @@ img{
 }
 
 #img{
+    width: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#barraNav{
+    margin-bottom: 2%;
+}
+
+#imgHeader--tilte{
+    width: 30%;
+}
+
+#navText{
+    text-align: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+    #desktopGallery{
+        display: none;
+    }
+
+    #mobileGallery{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 2300px){
+    #desktopGallery{
+        display: block;
+    }
+
+    #mobileGallery{
+        display: none;
+    }
 }

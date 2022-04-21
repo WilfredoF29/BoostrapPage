@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- head -->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/style.css">
     <title>Document</title>
 </head>
+<!-- body -->
 
 <body>
     <!-- header -->
     <header>
         <div class="container-fluid">
+            <!-- menu despegable -->
             <div class="row align-items-center">
                 <div class="col-md-2">
                     <div class="dropdown">
@@ -29,13 +32,15 @@
                             <li><button class="dropdown-item" type="button"><a href="#">Local</a></button></li>
                     </div>
                 </div>
-                <div class="col-md-8" style="text-align: center;"><img src="../images/pizzeriaa.png" alt="" width="30%">
+                <!-- imagen título -->
+                <div class="col-md-8 justify-content-center" id="imgHeader--tilte">
+                    <img src="../images/pizzeriaa.png" alt="">
                 </div>
             </div>
         </div>
         <!-- nav del header -->
-        <nav class="navbar sticky-top navbar-light bg-light">
-            <div class="container-fluid">
+        <nav class="navbar sticky-top navbar-light bg-light" id="barraNav">
+            <div class="container-fluid" id="navText">
                 <a class="navbar-brand col-md-2 align-items-center" href="../../index.html">Inicio</a>
                 <a class="navbar-brand col-md-2 align-items-center" href="sabores.html">Sabores</a>
                 <a class="navbar-brand col-md-2 align-items-center" href="#">Historia</a>
@@ -46,50 +51,8 @@
     </header>
     <!-- main -->
     <main>
-        <!-- <div class="container">
-            <div class="card rounded-right w-75 p-3 mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="../images/sabores/muzzarella.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card rounded-right w-75 p-3 mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="../images/sabores/tomate y huevo.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card rounded-right w-75 p-3 mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="../images/sabores/albachaytomate.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card rounded-right w-75 p-3 mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="../images/sabores/cebolla.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card rounded-right w-75 p-3 mx-auto" style="width: 18rem;">
-                <img class="card-img-top"
-                    src="https://images.deliveryhero.io/image/pedidosya/products/751746-221a67d3-ec92-4223-9953-a9af5bac7640.jpg?quality=90&width=248"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </div> -->
-        <!-- gallery -->
-        <div class="container">
-
-        </div>
-        <div class="card rounded-right w-75 p-3 mx-auto" style="width: 18rem;">
+        <!-- mobileGallery -->
+        <div class="card rounded-right w-75 p-3 mx-auto" style="width: 18rem;" id="mobileGallery">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselIndicator0" data-slide-to="0" class="active"></li>
@@ -111,7 +74,7 @@
                     <div class="carousel-item" id="carouselIndicator">
                         <img class="d-block w-100" src="../images/sabores/cebolla.jpg" alt="Cebolla">
                     </div>
-                    <div class="carousel-item" id="carouselIndicator"> 
+                    <div class="carousel-item" id="carouselIndicator">
                         <img class="d-block w-100"
                             src="https://images.deliveryhero.io/image/pedidosya/products/751746-221a67d3-ec92-4223-9953-a9af5bac7640.jpg?quality=90&width=248"
                             alt="Card image cap" alt="Papas fritas">
@@ -126,6 +89,51 @@
                     <span class="sr-only">Siguiente</span>
                 </a>
             </div>
+        </div>
+        <!-- gallery desktop -->
+        <div class="container" id="desktopGallery">
+            <div class="card rounded-right w-75 p-3 mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="../images/sabores/muzzarella.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card rounded-right w-75 p-3 mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="../images/sabores/tomate y huevo.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card rounded-right w-75 p-3 mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="../images/sabores/albachaytomate.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card rounded-right w-75 p-3 mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="../images/sabores/cebolla.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card rounded-right w-75 p-3 mx-auto" style="width: 18rem;">
+                <img class="card-img-top"
+                    src="https://images.deliveryhero.io/image/pedidosya/products/751746-221a67d3-ec92-4223-9953-a9af5bac7640.jpg?quality=90&width=248"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                </div>
+            </div>
     </main>
     <footer class="bg-light">
         <div class="container-fluid">
@@ -134,19 +142,19 @@
                     <a href="www.facebook.com"><img src="../images/fb.png" alt="" width="15px" id="img"></a>
                 </div>
                 <div class="col-md-2">
-                    <a href="https://www.instagram.com/"><img src="../images/instag.png" alt="" width="30px"></a>
+                    <a href="https://www.instagram.com/"><img src="../images/instag.png" alt="" id="img"></a>
                 </div>
                 <div class="col-md-2">
-                    <a href="https://twitter.com/"><img src="../images/tw.png" alt="" width="30px"></a>
+                    <a href="https://twitter.com/"><img src="../images/tw.png" alt="" id="img"></a>
                 </div>
 
                 <div class="col-md-6" style="text-align: center;">
-                       <p>Horario de atención de 10 a 22</p> 
+                    <p>Horario de atención de 10 a 22</p>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     </div>
 </body>
 
