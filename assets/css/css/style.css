@@ -1,29 +1,24 @@
-img{
+#img{
     width: 100%;
     height: 100%;
 }
 
-body{
+/* body{
     text-align: center;
+} */
+
+main{
+    margin-top: 20px ;
 }
 
-#img{
+.imgg{
     width: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-#barraNav{
-    margin-bottom: 2%;
-}
-
-#imgHeader--tilte{
-    width: 30%;
-    text-align: left;
-}
-
-#navText{
-    text-align: center;
+.card{
+    margin-bottom: 25px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px){
