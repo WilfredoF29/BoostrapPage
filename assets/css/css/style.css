@@ -3,6 +3,10 @@ img{
     height: 100%;
 }
 
+body{
+    text-align: center;
+}
+
 #img{
     width: 30px;
     padding-top: 10px;
@@ -15,6 +19,7 @@ img{
 
 #imgHeader--tilte{
     width: 30%;
+    text-align: left;
 }
 
 #navText{
