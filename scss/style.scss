@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    border: 0px;
+  }
+  
+  .imgg {
+    width: 30px;
+    padding-top: 15px;
+  }
+  
+  header {
+    background: #FAE588;
+  }
+  
+  main {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #F9DC5C;
+    background-image: url(../../images/ip2.png );
+    grid-area: main;
+  }
+  
+  footer {
+    background: #FAE588;
+  }
