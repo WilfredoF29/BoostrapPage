@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/css/style.css">
+        <link rel="stylesheet" href="scss/style.css">
         <title>Pizzería Pavatt</title>
 </head>
 <!-- body -->
@@ -19,7 +19,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-sm">
                 <div class="container">
-                    <a class="navbar-brand" href="#"><img src="assets/images/pizzeriaa.png" alt="" width="260" height="auto"></a>
+                    <a class="navbar-brand" href="#"><img src="assets/images/pizzeriaa.png" alt="" id="imgHeader"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -42,43 +42,35 @@
     <!-- main -->
     <main>
         <!-- video -->
-        <div class="container">
-            <div class="card mb-3 align-items-center">
-                <h1 class="">Mirá como hacemos nuestras pizzas</h1>
-                <iframe width="90%" height="400px" src="https://www.youtube.com/embed/OwDkl4MrLGs"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelwerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen class="card-img-top" alt="..."></iframe>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ad dicta
-                        soluta. Eveniet fugit perferendis iste labore iure fugiat vel. Praesentium incidunt inventore
-                        nostrum quibusdam aliquam.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
+        <div class="flexContainer">
+            <div class="card">
+                <section class="section__pag">
+                    <h2>Mirá como hacemos nuestras pizzas</h2>
+                    <iframe width="90%" height="400px" src="https://www.youtube.com/embed/OwDkl4MrLGs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelwerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam iste, rem non illo,
+                        vel,
+                        nobis error quas quos consequatur doloribus vero culpa voluptate nam aperiam nostrum? Cum doloribus
+                        deleniti quia?</p>
+                </section>
             </div>
         </div>
+        
     </main>
     <!-- footer -->
     <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2 col-md-2">
-                    <a href="www.facebook.com"><img src="assets/images/fb.png" alt="" class="imgg"></a>
-                </div>
-                <div class="col-2 col-md-2">
-                    <a href="https://www.instagram.com/"><img src="assets/images/instag.png" alt="" class="imgg"></a>
-                </div>
-                <div class="col-2 col-md-2">
-                    <a href="https://twitter.com/"><img src="assets/images/tw.png" alt="" class="imgg"></a>
-                </div>
-
-                <div class="col-6 col-md-6 align-items-center">
-                    <p>Horario de atención de 10 a 22</p>
-                </div>
-            </div>
+        <div class="footer__contact">
+            <h3>Nuestras redes sociales</h3>
+            <ul class="footer__contact--rede">
+                <li><a href="www.facebook.com"><img src="assets/images/fb.png" alt="" id="fb"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="assets/images/instag.png" alt=""></a></li>
+                <li><a href="https://twitter.com/"><img src="assets/images/tw.png" alt="" width=></a></li>
+            </ul>
         </div>
     </footer>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>

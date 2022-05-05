@@ -1,25 +1,185 @@
+$margin-card: 5px;
+$space: 15px;
+$background-colourOne: #FAE588;
+$background-colourTwo: #F9DC5C;
+$background-image: url(../assets/images/ip2.png);
+$tSizeh1: 28px;
+$tSizeh2: 24px;
+$tSizeh3: 16px;
+$tAlign: center;
+$cardSize: 60%;
+$cardContent-size: 90%;
+$cardContent-margin: 5%;
+
+
 * {
-    margin: 0px;
-    border: 0px;
-  }
+  margin: 0px;
+  border: 0px;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.imgg {
+  width: 30px;
+  height: auto;
+  padding-top: $space;
+}
+
+header {
+  background: $background-colourOne;
+}
+
+main {
+  padding-top: $space;
+  padding-bottom: $space;
+  background: $background-colourTwo;
+  background-image: $background-image;
+  grid-area: main
+}
+
+footer {
+  background: $background-colourOne;
+}
+
+#imgHeader{
+  width: 260px;
+  height: auto;
+}
+.flexContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+
+  .card {
+    width: $cardSize;
+    background: $background-colourOne;
+    margin-bottom: 20px;
   
-  .imgg {
-    width: 30px;
-    padding-top: 15px;
-  }
+    section{
   
-  header {
-    background: #FAE588;
-  }
+      h2{
+        font-size: $tSizeh2;
+        text-align: $tAlign;
+      }
+      
+      img{
+        width: $cardContent-size;
+        height: auto;
+        margin-left: $cardContent-margin;
+        margin-bottom: 5px;
+      }
+
+      iframe{
+        width: $cardContent-size;
+        margin-left: $cardContent-margin;
   
-  main {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background: #F9DC5C;
-    background-image: url(../../images/ip2.png );
-    grid-area: main;
-  }
+      }
   
-  footer {
-    background: #FAE588;
+      p{
+        width: 90%;
+        font-size: $tSizeh3;
+        margin-left: $cardContent-margin;
+      }
+  
+    }
   }
+}
+
+.flexContainer__sabores{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-self: center;
+  height: auto;
+
+  .card {
+    width: $cardSize;
+    background: $background-colourOne;
+    margin-bottom: 20px;
+  
+    section{
+  
+      h2{
+        font-size: $tSizeh2;
+        text-align: $tAlign;
+      }
+      
+      img{
+        width: $cardContent-size;
+        height: auto;
+        margin-left: $cardContent-margin;
+        margin-bottom: 5px;
+      }
+  
+      p{
+        width: 90%;
+        font-size: $tSizeh3;
+        margin-left: $cardContent-margin;
+      }
+    }
+  }
+}
+
+
+.footer__contact {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 35%;
+
+  h3 {
+    font-size: $tSizeh3;
+    text-align: $tAlign;
+  }
+
+  ul{
+    text-align: $tAlign;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.footer__time{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 35%;
+
+  h3 {
+    font-size: $tSizeh3;
+    text-align: $tAlign;
+  }
+
+  ul{
+    text-align: $tAlign;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;}
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+  .flexContainer__sabores{
+    display: none;
+  }
+}
