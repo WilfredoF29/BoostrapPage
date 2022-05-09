@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../scss/style.css">
+    <title>contacto</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html"><img src="../images/pizzeriaa.png" alt=""
+                        id="imgHeader"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sabores.html">Sabores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="histo.html">Historia</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contacto.html">Hace tu pedido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="local.html">Local</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <h1>Hace tu pedido</h1>
+        <div class="flecContainer">
+            <div class="card">
+                <section>
+                    <div>
+                        <form action="" class="grid">
+                            <div class="op1">
+                                <label for="nombre">
+                                    <p>Pedido para:</p>
+                                    <input type="text" placeholder="Nombre" name="nombre" class="casilla">
+                                </label>
+                            </div>
+                            <div class="op2">
+                                <label for="telefono">
+                                    <p>Número de telefono:</p>
+                                    <input type="tel" placeholder="Número de telefono" name="telefono" class="casilla">
+                                </label>
+                            </div>
+                            <div class="op3">
+                                <label for="mail">
+                                    <p>E-mail:</p>
+                                    <input type="mail" placeholder="E-mail" name="mail" class="casilla">
+                                </label>
+                            </div>
+                            <div class="op4">
+                                <label for="pizzas">
+                                    <p>Cúal pizza vas a pedir hoy:</p>
+                                    <select name="pizzas" id="">
+                                        <option value="1">Muzzarella</option>
+                                        <option value="2">Albahaca y tomate</option>
+                                        <option value="3">Cebolla</option>
+                                        <option value="4">Tomate y huevo</option>
+                                        <option value="5">Papas fritas</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="op5">
+                                <input type="radio" name="opci" id="option">
+                                <p>Take away</p>
+                                <input type="radio" name="opci" id="option">
+                                <p>Delivery</p>
+                            </div>
+                            <div class="op6">
+                                <label for="direc">
+                                    <p>Tú dirección:</p>
+                                    <input type="text" name="direc" placeholder="dirección" class="casilla">
+                                </label>
+                            </div>
+                            <div class="op7">
+                                <fieldset>
+                                    <legend>
+                                        <p>observaciones para la entrega</p>
+                                    </legend>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="op8">
+                                <input type="submit" name="enviar" placeholder="enviar orden">
+                                <input type="reset" name="cancelar" placeholder="cancelar orden">
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <!-- footer -->
+    <footer class="flexCo">
+        <div class="footer__contact">
+            <h3 class="footer__contact-title">Nuestras redes sociales</h3>
+            <ul class="footer__contact--rede">
+                <li><a href="www.facebook.com"><img src="../images/fb.png" alt="" id="fb"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="../images/instag.png" alt=""></a></li>
+                <li><a href="https://twitter.com/"><img src="../images/tw.png" alt="" width=></a></li>
+            </ul>
+        </div>
+        <div class="footer__contact">
+            <h3>Horario de atención</h3>
+            <ul>
+                <li>
+                    <p> lunes a jueves: 10:00hs a 14:00hs 19:00hs a 23:00hs</p>
+                </li>
+                <li>
+                    <p>viernes a domingo: 16:00hs a 00:00hs</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

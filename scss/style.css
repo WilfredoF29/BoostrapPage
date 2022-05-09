@@ -24,6 +24,11 @@ main {
   background: #F9DC5C;
   background-image: url(../assets/images/ip2.png);
   grid-area: main;
+  height: auto;
+}
+
+main h1 {
+  text-align: center;
 }
 
 footer {
@@ -35,53 +40,7 @@ footer {
   height: auto;
 }
 
-.flexContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.flexContainer .card {
-  width: 60%;
-  background: #FAE588;
-  margin-bottom: 20px;
-}
-
-.flexContainer .card section h2 {
-  font-size: 24px;
-  text-align: center;
-}
-
-.flexContainer .card section img {
-  width: 90%;
-  height: auto;
-  margin-left: 5%;
-  margin-bottom: 5px;
-}
-
-.flexContainer .card section iframe {
-  width: 90%;
-  margin-left: 5%;
-}
-
-.flexContainer .card section p {
-  width: 90%;
-  font-size: 16px;
-  margin-left: 5%;
-}
-
-.flexContainer__sabores {
+.flexContainer, .flexContainer__sabores {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,6 +54,35 @@ footer {
       align-content: center;
   justify-self: center;
   height: auto;
+}
+
+.flexContainer .card, .flexContainer__sabores .card {
+  width: 60%;
+  background: #FAE588;
+  margin-bottom: 20px;
+}
+
+.flexContainer .card section h2, .flexContainer__sabores .card section h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.flexContainer .card section img, .flexContainer__sabores .card section img {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-bottom: 5px;
+}
+
+.flexContainer .card section iframe, .flexContainer__sabores .card section iframe {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.flexContainer .card section p, .flexContainer__sabores .card section p {
+  width: 90%;
+  font-size: 16px;
+  margin-left: 5%;
 }
 
 .flexContainer__sabores .card {
@@ -203,6 +191,90 @@ footer {
           justify-content: space-between;
   width: 100%;
   list-style: none;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "op1 op2" "op3 op4" "op5 op6" "op7 op7" "op8 op8";
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[4] 0.5fr;
+      grid-template-rows: repeat(4, 1fr) 0.5fr;
+  height: 600px;
+  overflow: hidden;
+  background-color: #FAE588;
+}
+
+.grid .op1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: op1;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.grid .op2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: op2;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.grid .op3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: op3;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.grid .op4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: op4;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.grid .op5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: op5;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.grid .op6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: op6;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.grid .op7 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: op7;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  overflow: hidden;
+  text-align: center;
+}
+
+.grid .op8 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: op8;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  text-align: center;
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
