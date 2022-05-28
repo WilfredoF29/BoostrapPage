@@ -17,6 +17,11 @@ $cardContent-margin: 5%;
   margin-left: $cardContent-margin;
 }
 
+@mixin h2 {
+  font-size: $tSizeh2;
+  text-align: $tAlign;
+}
+
 * {
   margin: 0px;
   border: 0px;
@@ -50,6 +55,10 @@ main {
   }
 }
 
+.main{
+  height: 1200px;
+}
+
 footer {
   background: $background-colourOne;
 }
@@ -75,8 +84,7 @@ footer {
     section {
 
       h2 {
-        font-size: $tSizeh2;
-        text-align: $tAlign;
+        @include h2
       }
 
       img {
@@ -112,8 +120,7 @@ footer {
     section {
 
       h2 {
-        font-size: $tSizeh2;
-        text-align: $tAlign;
+        @include h2
       }
 
       img {
@@ -134,14 +141,14 @@ footer {
 
 
 .footer__contact {
-  width: 35%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 35%;
+  margin-left: 20%;
 
-  h3 {
+  h2 {
     font-size: $tSizeh3;
     text-align: $tAlign;
   }
@@ -159,29 +166,6 @@ footer {
       width: 30px;
       height: 30px;
     }
-  }
-}
-
-.footer__time {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 35%;
-
-  h3 {
-    font-size: $tSizeh3;
-    text-align: $tAlign;
-  }
-
-  ul {
-    text-align: $tAlign;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    list-style: none;
   }
 }
 
